@@ -4,9 +4,10 @@ import { Header } from '../components/header';
 
 export const metadata = {
     title: {
-        template: '%s | Netlify',
-        default: 'Netlify Starter'
-    }
+        template: '%s | Legacy Audio Lab',
+        default: 'Legacy Audio Lab - Professional Audio Digitization & Restoration'
+    },
+    description: 'Professional digitization and restoration of legacy audio formats. We extract pristine audio from vinyl, tape, and rare formats, delivering tracks ready for Pro Tools, Logic, Reaper, Ableton, and Cubase/Nuendo.'
 };
 
 export default function RootLayout({ children }) {
