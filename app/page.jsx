@@ -17,8 +17,8 @@ export default function Page() {
                     <Link href="/contact" className="btn btn-lg bg-blue-600 hover:bg-blue-500 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
                         Get Started
                     </Link>
-                    <Link href="/portfolio" className="btn btn-lg bg-transparent border-2 border-blue-300 text-blue-300 hover:bg-blue-300 hover:text-blue-900 px-8 py-3 rounded-lg font-semibold transition-colors">
-                        View Portfolio
+                    <Link href="/services" className="btn btn-lg bg-transparent border-2 border-blue-300 text-blue-300 hover:bg-blue-300 hover:text-blue-900 px-8 py-3 rounded-lg font-semibold transition-colors">
+                        View Services
                     </Link>
                 </div>
             </section>
