@@ -85,10 +85,6 @@ export default function ContactPage() {
                                 action="/success"
                                 data-netlify="true"
                                 data-netlify-honeypot="bot-field"
-                                onSubmit={(e) => {
-                                    // Let Netlify handle the submission
-                                    // Don't prevent default - let the native form submission happen
-                                }}
                             >
                                 <input type="hidden" name="form-name" value="quote-request" />
                                 <div style={{ display: 'none' }}>
