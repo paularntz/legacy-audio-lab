@@ -14,9 +14,15 @@ export function QuoteForm() {
 
         const myForm = event.target;
         const formData = new FormData(myForm);
+        
+        // Debug: Log the form data
+        console.log('Form data being sent:');
+        for (let [key, value] of formData.entries()) {
+            console.log(`${key}: ${value}`);
+        }
 
         try {
-            const response = await fetch('/__forms.html', {
+            const response = await fetch('/thank-you.html', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                 body: new URLSearchParams(formData).toString()
