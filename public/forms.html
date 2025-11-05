@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Netlify Forms Detection</title>
+</head>
+<body>
+    <!-- Static form for Netlify build-time detection -->
+    <!-- This form must exactly match the React form structure -->
+    <form 
+        name="quote-request" 
+        data-netlify="true"
+        data-netlify-honeypot="bot-field" 
+        method="POST"
+        style="display: none;"
+    >
+        <input type="hidden" name="form-name" value="quote-request" />
+        <input name="bot-field" type="text" />
+        
+        <!-- All form fields must be present for detection -->
+        <input type="text" name="firstName" />
+        <input type="text" name="lastName" />
+        <input type="email" name="email" />
+        <input type="tel" name="phone" />
+        
+        <select name="projectType">
+            <option value="">Select a project type</option>
+            <option value="adat">ADAT Tapes</option>
+            <option value="reel-to-reel">Reel-to-Reel</option>
+            <option value="vinyl">Vinyl Records</option>
+            <option value="cassette">Cassette Tapes</option>
+            <option value="dat">DAT Tapes</option>
+            <option value="rare">Rare/Vintage Formats</option>
+            <option value="multiple">Multiple Formats</option>
+            <option value="restoration">Audio Restoration</option>
+            <option value="consultation">Consultation</option>
+        </select>
+        
+        <input type="number" name="quantity" />
+        
+        <select name="timeline">
+            <option value="">When do you need this completed?</option>
+            <option value="rush">Rush (48 hours)</option>
+            <option value="1-week">Within 1 week</option>
+            <option value="2-weeks">Within 2 weeks</option>
+            <option value="1-month">Within 1 month</option>
+            <option value="flexible">Timeline flexible</option>
+        </select>
+        
+        <textarea name="message" rows="4"></textarea>
+        <input type="checkbox" name="newsletter" value="yes" />
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

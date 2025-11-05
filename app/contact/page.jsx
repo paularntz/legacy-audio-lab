@@ -82,15 +82,20 @@ export default function ContactPage() {
                                 className="space-y-6"
                                 name="quote-request"
                                 method="POST"
+                                action="/success"
                                 data-netlify="true"
-                                netlify-honeypot="bot-field"
+                                data-netlify-honeypot="bot-field"
+                                onSubmit={(e) => {
+                                    // Let Netlify handle the submission
+                                    // Don't prevent default - let the native form submission happen
+                                }}
                             >
                                 <input type="hidden" name="form-name" value="quote-request" />
-                                <p hidden>
+                                <div style={{ display: 'none' }}>
                                     <label>
-                                        Don't fill this out: <input name="bot-field" />
+                                        Don't fill this out if you're human: <input name="bot-field" />
                                     </label>
-                                </p>
+                                </div>
                                 <div className="grid md:grid-cols-2 gap-4">
                                     <div>
                                         <label htmlFor="firstName" className="block text-sm font-medium text-blue-200 mb-2">
